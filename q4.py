@@ -1,0 +1,10 @@
+fun=str(input('Enter the function:'))
+a=float(input('Enter first point:'))
+b=float(input('Enter second point:'))
+from romil import regula,nr
+ans_r=regula(fun,a,b)
+print('For Newton Rapson method')
+st=float(input('Enter inital guess:'))
+ans_n=nr(fun,st)
+print('Result for regula falsi:',ans_r)
+print('Result for Newton Rapson method:',ans_n)
